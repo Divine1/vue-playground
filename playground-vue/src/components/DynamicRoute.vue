@@ -29,7 +29,9 @@ export default {
     methods:{
         changeCountry(){
             console.log("in changeCountry method");
-            this.$router.push("/dynamic/"+this.country);
+            //this.$router.push("/dynamic/"+this.country);
+            this.$router.push({ path: 'dynamic', params: { id: this.country }});
+            
         }
     }
     

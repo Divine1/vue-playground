@@ -6,7 +6,7 @@
       <router-link to="/computed" tag="div" active-class="active">Computed</router-link>
       <router-link to="/method" tag="div" active-class="active" >Method</router-link>
       <router-link to="/watch" tag="div" active-class="active" exact>Watch</router-link>
-      <router-link to="/dynamic/india" tag="div" active-class="active" exact>DynamicRoutes</router-link>
+      <router-link to="/dynamic/india" tag="div" active-class="active" :class="[$route.fullPath.indexOf('dynamic') >=0 ? 'active' : '']">DynamicRoutes</router-link>
       
     </div>
     <div>
